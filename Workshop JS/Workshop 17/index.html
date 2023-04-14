@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <title>Guessing Game</title>
+</head>
+
+<body>
+
+    <button id="clear" class="clear btn">
+        <i class="fas fa-trash"></i>
+    </button>
+    <h1>Guess Game
+        <button id="show" class="btn btn_small">
+            <i class="fas fa-plus">Add a question</i>
+        </button>
+    </h1>
+
+    <div id="card_container" class="card_container cards">
+        <div class="card active"></div>
+    </div>
+    <div class="navigation">
+        <button id="prev" class="nav_button">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <p id="current" class="current"></p>
+        <button id="next" class="nav_button">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+    <div class="add_container" id="add_container">
+        <h3>
+            Add question
+            <button id="btn_hidden" class="btn btn_small btn_hidden">
+                <i class="fas fa-times"></i>
+            </button>
+        </h3>
+        <div class="form_group">
+            <label for="">Question</label>
+            <textarea id="question"></textarea>
+        </div>
+        <div class="form_group">
+            <label for="">Answer</label>
+            <textarea id="answer"></textarea>
+        </div>
+        <button id="add_card" class="btn">
+            <i class="fas fa-plus"></i>Add a question
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

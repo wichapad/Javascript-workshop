@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kanban Board</title>
+</head>
+
+<body>
+    <h1 class="main_title">Working Plan</h1>
+    <div class="board_container" id="board_container">
+        <ul class="board_list">
+            <!-- div 1 -->
+            <li class="board_column backlog_comlumn">
+                <span class="header">
+                    <h1>Backlog</h1>
+                </span>
+                <div class="custom_scroll" id="backlog_content">
+                    <ul class="board_item_list" id="backlog_list">
+                        <li class="board_item" draggable="true">design animate</li>
+                        <li class="board_item" draggable="true">send customer</li>
+                        <li class="board_item" draggable="true">offer budget</li>
+                    </ul>
+                </div>
+
+            </li>
+            <!-- div 2 -->
+            <li class="board_column progress_comlumn">
+                <span class="header">
+                    <h1>Progress</h1>
+                </span>
+                <div class="custom_scroll" id="progress_content">
+                    <ul class="board_item_list" id="progress_list">
+                        <li class="board_item" draggable="true">design logo</li>
+                        <li class="board_item" draggable="true">cut video</li>
+                    </ul>
+                </div>
+
+            </li>
+            <!-- div 3 -->
+            <li class="board_column success_comlumn">
+                <span class="header">
+                    <h1>Success</h1>
+                </span>
+                <div class="custom_scroll" id="success_content">
+                    <ul class="board_item_list" id="success_list"></ul>
+                </div>
+
+            </li>
+            <!-- div 3 -->
+            <li class="board_column unsuccess_comlumn">
+                <span class="header">
+                    <h1>Unsuccess</h1>
+                </span>
+                <div class="custom_scroll" id="unsuccess_content">
+                    <ul class="board_item_list" id="unsuccess_list"></ul>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

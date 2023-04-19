@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #303366;
+    --secondary-color: red;
+    --modal-delay: 1s;
+}
+
+nav {
+    background-color: var(--primary-color);
+    border-right: 2px solid rgba(200, 200, 200, 0.1);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    z-index: 100;
+    transform: translateX(-100%);
+}
+
+nav .logo {
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav .logo img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+nav ul li {
+    border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 130%;
+    position: relative;
+    text-align: center;
+    padding: 40px 15px;
+}
+
+header p {
+    margin: 30px;
+}
+
+button,
+input[type="submit"] {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+header .toggle {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+header .create_account {
+    padding: 12px 30px;
+}
+
+.container {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+}
+
+body.show_nav {
+    transform: translateX(200px);
+    /* ขนาด width ของตัว nav*/
+}
+
+body {
+    transition: transform 0.3s ease;
+}
+
+.modal_container {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+
+}
+
+.modal_container.show_modal {
+    display: block;
+}
+
+.modal {
+    animation: modalOpen;
+    animation-duration: var(--modal-delay);
+}
+
+.modal_header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px;
+}
+
+.modal_content {
+    padding: 20px;
+}
+
+.modal_form div {
+    margin: 15px 0;
+}
+
+.modal_form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form_input {
+    padding: 8px;
+    width: 100%;
+}
+.close_btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+@keyframes modalOpen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

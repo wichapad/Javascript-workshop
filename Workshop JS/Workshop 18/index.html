@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <title>Menu Slide</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="/Workshop 18/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#">Main</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <button id="toggle" class="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <h1>Wichapad</h1>
+        <p>Workshop Menu Slide</p>
+        <button id="open" class="create_account">Sign up</button>
+    </header>
+    <div class="container">
+        <h2>Web Development</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe nesciunt deleniti ratione reprehenderit
+            accusantium, officia accusamus porro quo fugiat culpa, quisquam beatae esse animi earum dolorum magni
+            similique adipisci dolore.</p>
+        <h2>Game Development</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, facilis. Iure, assumenda impedit. Saepe
+            incidunt dolorem provident necessitatibus magni animi dicta dolore libero voluptatum. Dignissimos cupiditate
+            a minima similique ex.</p>
+    </div>
+    <div class="modal_container" id="modal">
+        <div class="modal">
+            <button class="close_btn" id="close">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="modal_header">
+                <h3>Create Account</h3>
+            </div>
+            <div class="modal_content">
+                <p>Form Account</p>
+                <form action="" class="modal_form">
+                    <div>
+                        <label for="">Username</label>
+                        <input type="text" class="form_input">
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email" class="form_input">
+                    </div>
+                    <div>
+                        <label for="">Password</label>
+                        <input type="password" class="form_input">
+                    </div>
+                    <input type="submit" value="Create Account" class="submit_btn">
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

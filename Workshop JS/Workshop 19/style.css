@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control{
+    border: none;
+    outline: none;
+}
+
+.control:active{
+    transform: scale(0.98);
+}
+
+.record{
+    color: #fff;
+    background: red;
+    padding: 5px 15px;
+}
+
+.pause{
+    color: #fff;
+    background: blueviolet;
+    padding: 5px 15px;
+
+}
+
+.title{
+    color: #fff;
+    background: orange;
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+}

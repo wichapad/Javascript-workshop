@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faf7ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.card {
+    width: 350px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.card_header {
+    height: 200px;
+}
+
+.card_header img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card_content {
+    background-color: #fff;
+    padding: 30px;
+}
+
+.card_title {
+    height: 20px;
+}
+
+.card_description {
+    color: #777;
+    margin: 10px 0 20px;
+}
+
+.seller {
+    display: flex;
+    margin-top: 10px;
+}
+.profile_seller{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+}
+.seller_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+    width: 100px;
+}
+.seller_info small{
+    color: #999;
+    margin-top: 5px;
+}
+
+/* Create Loading Animation */
+.animated_bg{
+    background-image: linear-gradient(
+        to right,
+        #f6f7f8 0%,
+        #edeef1 10%,
+        #f6f7f8 20%,
+        #f6f7f8 100%
+    );
+    background-size: 200% 100%;
+    animation: animatedPlay 1s linear infinite;
+}
+.animated_text{
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0;
+    height: 10px;
+    width: 100%;
+}
+
+@keyframes animatedPlay{
+    0%{
+        background-position: 50% 0;
+    }
+    100%{
+        background-position: -150% 0;
+    }
+}
